@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd ~/websites/europeana-portal/shell-scripts
+./europeana-portal.sh "$@"

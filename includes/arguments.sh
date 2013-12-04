@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # handles arguments passed to europeana-portal.sh
 # @see http://stackoverflow.com/questions/402377/using-getopts-in-bash-shell-script-to-get-long-and-short-command-line-options#answer-7948533
 
@@ -78,7 +78,7 @@ while true; do
 			gitpull=true;
 			shift;;
 		-h | --help )
-			echo $usage;
+			echo -e $usage;
 			exit;;
 
 		-l | --local )

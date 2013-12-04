@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # pulls in the git projects registered in variables.sh
 
 msgHeader "INFO" "git pull"

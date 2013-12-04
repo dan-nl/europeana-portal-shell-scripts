@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # copy wars to tomcat webapp directory
 
 msgHeader "INFO" "copy portal wars to tomcat webapp directory"

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ $tomcat == true ]; then
 	while true; do
@@ -14,7 +14,7 @@ if [ $tomcat == true ]; then
 				fi
 				break;;
 			[Nn]* ) exit;;
-			* ) echo "Please answer yes or no.";;
+			* ) echo -e "Please answer yes or no.";;
 		esac
 	done
 fi

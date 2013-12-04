@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 CATALINA_OPTS='-Xmx4096m -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -XX:MaxPermSize=1024M'
 

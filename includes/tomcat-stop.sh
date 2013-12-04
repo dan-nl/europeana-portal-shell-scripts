@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # shutdown tomcat
 
 msgHeader "INFO" "shutting down tomcat"

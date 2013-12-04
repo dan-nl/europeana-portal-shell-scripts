@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ $local == true ]; then
 	PROPERTY_FILE=europeana.properties.local

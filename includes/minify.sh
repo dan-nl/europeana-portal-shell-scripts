@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # minifies portal2 front-end assets
 
 msgHeader "INFO" "minify front-end assets"

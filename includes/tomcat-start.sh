@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # prepare tomcat options and start it up
 
 msgHeader "INFO" "starting tomcat"

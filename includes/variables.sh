@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # configuration variables for europeana-portal.sh
 
 msgHeader "INFO" "variables"

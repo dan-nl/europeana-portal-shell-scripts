@@ -16,6 +16,7 @@ msg "INFO" ""
 . ./includes/build-projects.sh
 . ./includes/minify.sh
 . ./includes/copy-portal-wars.sh
+. ./includes/refresh-webapp-assets.sh
 . ./includes/tomcat-start.sh
 
 msgRule "INFO"

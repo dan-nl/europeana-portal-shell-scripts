@@ -27,14 +27,15 @@ usage="Example usage:\n\n
  -rw\t   --removeWars\t\t         removes wars from tomcat directories\n
  -cw\t   --copyWars\t\t           copies wars to tomcat directories\n\n
 
- -rp\t   --redeployPortal\t       redeploy portal\n\n
+ -rp\t   --redeployPortal\t       redeploy portal\n
+ -rwa\t  --refreshWebapp\t        refresh webapp assets\n\n
 
  --tomcat-restart\t\t             stops tomcat, then starts it\n
  --tomcat-stop\t\t\t              stops tomcat\n
  --tomcat-start\t\t\t             starts tomcat\n"
 
-arguments=( build_api2 build_corelib build_portal copy_wars debug gitpull local )
-arguments+=( minify remove_directories remove_wars run_tests tomcat_stop tomcat_start )
+arguments=( build_api2 build_corelib build_portal copy_wars debug gitpull local minify )
+arguments+=( refresh_webapp_assets remove_directories remove_wars run_tests tomcat_stop tomcat_start )
 
 for i in ${arguments[*]}; do
 	eval $i=false
@@ -105,6 +106,10 @@ while true; do
 			tomcat_stop=true;
 			tomcat_start=true;
 			copy_wars=true;
+			shift;;
+
+		-rwa | --refreshWebapp )
+			refresh_webapp_assets=true;
 			shift;;
 
 		--tomcat-restart )

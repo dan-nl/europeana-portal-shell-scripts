@@ -23,7 +23,7 @@ usage="Example usage:\n\n
  -m\t    --minify\t\t             minifies the front-end assets\n
  -rt\t   --runTests\t\t           runs tests during maven build\n\n
 
- -rd\t   --removeDirectories\t    remove webapp directories\n\n
+ -rd\t   --removeDirectories\t    remove webapp directories and Catalinat/localhost directory\n\n
  -rw\t   --removeWars\t\t         removes wars from tomcat directories\n
  -cw\t   --copyWars\t\t           copies wars to tomcat directories\n\n
 

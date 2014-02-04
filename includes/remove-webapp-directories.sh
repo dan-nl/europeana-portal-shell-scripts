@@ -5,6 +5,7 @@ msgHeader "INFO" "remove webapp directories"
 
 if [ $remove_directories == true ]; then
 	removeDirectoryOrFile webapp_projects "$TOMCAT_WEBAPP_DIR"/ -d
+	removeDirectoryOrFile webapp_work "$TOMCAT_DIR"/ -d
 	msg "INFO" ""
 else
 	msgResultTabbed "INFO" "remove webapp directories" "skipped"

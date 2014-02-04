@@ -29,6 +29,7 @@ war_directories[2]="$PROJECT_DIR"/portal/portal2/target/portal.war
 
 # webapp project directory names
 webapp_projects=( api api-demo portal )
+webapp_work=( libexec/work/Catalina/localhost )
 
 msg "INFO" "variable setup complete"
 msg "INFO" ""

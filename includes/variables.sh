@@ -4,11 +4,13 @@
 msgHeader "INFO" "variables"
 
 # alter these variable as appropriate for your environment
+# note that the property file can be placed anywhere, the value below is only a suggestion
 HOME=~
 PROJECT_DIR="$HOME"/websites/europeana-portal
-PROPERTY_FILE_DIR="$HOME"/websites/europeana-portal/portal/portal2
+PROPERTY_FILE_DIR="$PROJECT_DIR"/portal/portal2
 SHELL_SCRIPT_DIR="$PROJECT_DIR"/shell-scripts
 TOMCAT_DIR=/usr/local/Cellar/tomcat6/6.0.37
+TOMCAT_WEBAPP_DIR="$TOMCAT_DIR"/libexec/webapps
 URL="http://localhost:8080/portal/"
 
 # git project directories within the main PROJECT_DIR

@@ -27,6 +27,8 @@ usage="Example usage:\n\n
  -rw\t   --removeWars\t\t         removes wars from tomcat directories\n
  -cw\t   --copyWars\t\t           copies wars to tomcat directories\n\n
 
+ -rp\t   --redeployPortal\t       redeploy portal\n\n
+
  --tomcat-restart\t\t             stops tomcat, then starts it\n
  --tomcat-stop\t\t\t              stops tomcat\n
  --tomcat-start\t\t\t             starts tomcat\n"
@@ -97,6 +99,14 @@ while true; do
 		-rw | --removeWars )
 			remove_wars=true;
 			shift;;
+
+		-rp | --redeployPortal )
+			build_portal=true;
+			tomcat_stop=true;
+			tomcat_start=true;
+			copy_wars=true;
+			shift;;
+
 		--tomcat-restart )
 			tomcat_stop=true;
 			tomcat_start=true;

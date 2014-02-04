@@ -4,7 +4,7 @@
 msgHeader "INFO" "remove webapp directories"
 
 if [ $remove_directories == true ]; then
-	removeDirectoryOrFile webapp_projects "$TOMCAT_DIR"/libexec/webapps/ -d
+	removeDirectoryOrFile webapp_projects "$TOMCAT_WEBAPP_DIR"/ -d
 	msg "INFO" ""
 else
 	msgResultTabbed "INFO" "remove webapp directories" "skipped"

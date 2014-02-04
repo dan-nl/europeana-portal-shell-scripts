@@ -17,7 +17,7 @@ if [ $tomcat_start == true ]; then
 	export CATALINA_OPTS="$CATALINA_OPTS $EUROPEANA_OPTS"
 
 	# startup tomcat
-	$TOMCAT_DIR/bin/startup.sh
+	"$TOMCAT_DIR"/bin/startup.sh
 
 	msgHeader "INFO" "tomcat started"
 	msg "INFO" "the portal can be viewed at: $URL"

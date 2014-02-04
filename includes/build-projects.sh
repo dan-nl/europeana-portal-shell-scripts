@@ -19,7 +19,7 @@ for i in ${project_directories[*]}; do
 		msgRule "INFO"
 
 		cd "$PROJECT_DIR"/"$i"/
-		mvn clean install "$maven_options"
+		mvn clean install $maven_options
 
 		msg "INFO"
 	else

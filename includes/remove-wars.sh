@@ -4,7 +4,7 @@
 msgHeader "INFO" "remove wars"
 
 if [ $remove_wars == true ]; then
-	removeDirectoryOrFile wars "$TOMCAT_DIR"/libexec/webapps/ -f
+	removeDirectoryOrFile wars "$TOMCAT_WEBAPP_DIR"/ -f
 	msg "INFO" ""
 else
 	msgResultTabbed "INFO" "remove wars" "skipped"

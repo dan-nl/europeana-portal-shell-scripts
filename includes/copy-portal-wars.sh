@@ -6,7 +6,7 @@ msgHeader "INFO" "copy portal wars to tomcat webapp directory"
 if [ $copy_wars == true ]; then
 	for i in ${war_directories[*]}; do
 		if [ -f "$i" ]; then
-			cp "$i" "$TOMCAT_DIR"/libexec/webapps/
+			cp "$i" "$TOMCAT_WEBAPP_DIR"/
 			status="copied"
 		else
 			status="does not exist"

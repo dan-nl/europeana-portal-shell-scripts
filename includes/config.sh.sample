@@ -1,0 +1,24 @@
+#!/bin/bash
+# environment specific configuration variables for europeana-portal.sh
+# copy to includes/config.sh and modify as necessary
+
+msgHeader "INFO" "config"
+
+# alter these variable as appropriate for your environment
+# note that the europeana.properties file can be placed anywhere,
+# the value below is only a suggestion
+HOME=~
+PROJECT_DIR="$HOME"/websites/europeana-portal
+PROPERTY_FILE_DIR="$PROJECT_DIR"/portal/portal2
+SHELL_SCRIPT_DIR="$PROJECT_DIR"/shell-scripts
+TOMCAT_DIR=/usr/local/Cellar/tomcat6/6.0.37
+TOMCAT_WEBAPP_DIR="$TOMCAT_DIR"/libexec/webapps
+TOMCAT_WORK_DIR="$TOMCAT_DIR"/libexec/work/Catalina/localhost
+URL="http://localhost:8080/portal/"
+
+# git project directories within the main PROJECT_DIR
+# depends on the directory name you checked the projects out to at clone time
+git_directories=( api2 corelib portal portal-translations )
+
+msg "INFO" "config setup complete"
+msg "INFO" ""

@@ -1,6 +1,6 @@
 europeana-portal-shell-scripts
 ==============================
-a shell deployment script for the europeana-portal; inspired by [péter kiraly’s](https://github.com/pkiraly) initial shell scripts.
+a shell deployment script for the europeana-portal; inspired by [péter kiraly’s](https://github.com/pkiraly) initial shell scripts. many thanks for his continued support and testing!
 
 installation
 -------------
@@ -13,6 +13,8 @@ installation
     1. ````chmod +x ~/bin/europeana-portal````
     1. ````nano ~/bin/europeana-portal```` change the directory as appropriate for your environment.
 
-1. ````nano shell-scripts/includes/variables.sh```` alter as appropriate for your environment.
+1. ````cp shell-scripts/includes/config.sh.sample config.sh````
+
+1. ````nano shell-scripts/includes/config.sh```` alter as appropriate for your environment.
 
 1. run ````europeana-portal -h```` for usage instructions.

@@ -1,2 +1,3 @@
 .DS_Store
 *.komodo*
+includes/config.sh

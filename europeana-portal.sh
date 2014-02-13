@@ -8,6 +8,7 @@ msgRule "INFO"
 msg "INFO" ""
 
 . ./includes/arguments.sh
+. ./includes/config.sh
 . ./includes/variables.sh
 . ./includes/gitpull.sh
 . ./includes/tomcat-stop.sh

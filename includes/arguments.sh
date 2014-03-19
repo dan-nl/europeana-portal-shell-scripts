@@ -103,12 +103,12 @@ while true; do
 
 		-rdp | --redeployPortal )
 			build_portal=true;
+			tomcat_stop=true;
 			remove_directories=true;
 			remove_wars=true;
-			tomcat_stop=true;
-			tomcat_start=true;
 			copy_wars=true;
-			refresh_webapp_assets=true;
+			tomcat_start=true;
+			#refresh_webapp_assets=true;
 			shift;;
 
 		-rwa | --refreshWebapp )
